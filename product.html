@@ -1,0 +1,303 @@
+  <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Red Store</title>
+    <link rel="icon" href="IMG/logo-white.png" width="100%">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="icon-nav">
+        <div class="icon-nav-bar">    
+              <a href="#"><i class="fa fa-home" style="font-size:36px" title="Home"></i></a>
+              <a href="#"><i class="fa fa-search" style="font-size:36px" title="Search"></i></a>
+              <a href="#" onclick="opencart()"><i class="fa fa-shopping-cart" style="font-size:36px"  title="Cart"></i></a>
+              <a href="#"><i class="material-icons" style="font-size:36px"  title="More">more</i></a>
+        </div>
+    </div>
+    
+    <div class="header" id="header" style="background:#fff;">
+    <div class="container">
+        <div class="side-nav">
+                    <!--SideNav Bar-->
+            <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+			     <a href="">Contact</a>
+                 <a href="signup.php">Signup/Login</a>
+            </div>
+    <div id="main">
+    <span style="font-size:40px;cursor: pointer;" onclick="openNav()" id="open">&#9776;</span>
+    </div>
+        <div class="logo"> <img src="IMG/logo.png" width="125px"></div>
+        </div>
+        
+	   <div class="navbar">
+		<div class="logo"> <img src="IMG/logo.png" width="125px"></div>
+		<nav>
+			<ul>
+                <li><a href="index.html">Home</a></li>
+			<li><a href="">Contact</a></li>
+            <li><a href="signup.php">Signup/Login</a></li>
+            </ul>
+		</nav>
+           &nbsp;<a href="#" onclick="opencart()"><i class="fa fa-shopping-cart" style="font-size:36px"  title="Cart"></i></a>
+         </div>
+        </div>
+    </div>
+     
+    <div class="product">
+        <h1><p align="center" style="border-bottom:4px solid #ff523b"><b>Latest Products</b></p></h1>
+        
+        <div class="feature">
+        <div class="row-3">
+            <div class="pro" openitem()>
+            <img src="IMG/product-1.jpg">
+            <p>Rod Printed T-Shirt</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$50.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-2.jpg">
+            <p>HRX Sports Shoes</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>Price:$75.00</p>    
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="pro">
+            <img src="IMG/product-3.jpg">
+            <p>HRX Grey Trackpant</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+            </div>
+            <p>Price:$45.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-4.jpg">
+            <p>Blue Printed T-Shirt</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>Price:$55.00</p>
+            </div>
+        </div>
+    </div>
+    </div>
+         <div class="feature">
+        <div class="row-3">
+            <div class="pro">
+            <img src="IMG/product-5.jpg">
+            <p>HRX White Shoes</p>
+                        <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>Price:$50.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-6.jpg">
+            <p>Black Puma T-Shirt</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$75.00</p>    
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="pro">
+            <img src="IMG/product-7.jpg">
+            <p>HRX Socks</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$45.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-8.jpg">
+            <p>Titan Black Watch</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$255.00</p>
+            </div>
+        </div>
+        </div>
+         
+        <div class="feature">
+        <div class="row-3">
+            <div class="pro">
+            <img src="IMG/product-9.jpg">
+            <p>Timex Watch</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$110.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-10.jpg">
+            <p>HRX Sports Shoes</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>Price:$275.00</p>    
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="pro">
+            <img src="IMG/product-11.jpg">
+            <p>HRX Grey Shoes</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$145.00</p>
+            </div>
+        </div>
+        <div class="row-3">
+             <div class="pro">
+            <img src="IMG/product-12.jpg">
+            <p>Black Trackpant</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Price:$65.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cart" id="cart">
+            <span style="font-size:30px;margin-left:70%;cursor: pointer;"   onclick="closecart()">&times;</span><br><br>
+            <h3>Welcome to Cart Section</h3><br><br><br><br><br><br>
+            <i class="fa fa-warning" style="font-size:48px;color:red"></i><br>
+            <p>No items found</p><br><br><br><br><br><br>
+            <a href="product.html" >Add Products</a>
+    </div>
+    
+    <div class="openItems" id="openDetails" style="display:none;"><br>
+            <div class="items-pic">
+                <img src="img/gallery-1.jpg" width="410px" class="main" id="main"><br>
+                <img src="img/gallery-1.jpg" width="100px" class="side" onclick="change1()">
+                <img src="img/gallery-2.jpg" width="100px" class="side" onclick="change2()">
+                <img src="img/gallery-3.jpg" width="100px" class="side" onclick="change3()">
+                <img src="img/gallery-4.jpg" width="100px" class="side" onclick="change4()">
+            </div>
+            <br><br><br><br>
+            <div class="items-text">
+                <h2>Rod Printed T-Shirt by HRX</h2><br>
+                <h2>$50.00</h2><br>
+            <form>
+                <select class="select">
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+                </select><br>
+                <br>
+                <input type="number" class="select" min="0" style="width:35px;">
+                &nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Add To Cart" style="width:105px;border-radius:30px;">
+            </form><br>
+                <h3>Product Details</h3><br><br>
+                <p style="width:500px;">Give your summer wardrobe a style upgrade with HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out the the guys.</p>
+            </div>
+            <span style="font-size:30px;margin-left:10%;cursor: pointer;" onclick="closeItems()">&times;</span><br><br>
+        </div>
+    
+    <footer>
+       <p align="center"><img src="IMG/logo-white.png"><br><br>
+        <h2><p align="center"><span style="color:red;">&copy;RED</span> STORE</p></h2>
+    </footer>
+    
+    <script>
+         function openitem(){
+            document.getElementById('openDetails').style.display="block";
+         }
+        function closeItems(){
+              document.getElementById('openDetails').style.display="none";
+        }
+        function closecart(){
+            document.getElementById('cart').style.display="none";
+        }
+        function opencart(){
+            document.getElementById('cart').style.display="block";
+        }
+        function openNav(){
+            document.getElementById('mySidenav').style.width="250px";
+            document.getElementById('main').style.marginLeft="250px";
+            document.getElementById('open').style.display="none";
+        }
+        function closeNav(){
+            document.getElementById('mySidenav').style.width="0";
+            document.getElementById('main').style.marginLeft="0";   
+            document.getElementById('open').style.display="block";
+        }
+    </script>
+    </body>
+</html>
