@@ -18,8 +18,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!= true){
 <body>
     <div class="icon-nav">
         <div class="icon-nav-bar">    
-              <a href="index.html"><i class="fa fa-home" style="font-size:36px" title="Home"></i></a>
-              <a href="#"><i class="fa fa-search" style="font-size:36px" title="Search"></i></a>
+              <a href="welcome.php"><i class="fa fa-home" style="font-size:36px" title="Home"></i></a>
+              <a href=""><i class="fa fa-search" style="font-size:36px" title="Search"></i></a>
               <a href=""><i class="fa fa-shopping-cart" style="font-size:36px"  title="Cart" opencart()></i></a>
               <a href="#"><i class="material-icons" style="font-size:36px"  title="More">more</i></a>
         </div>
@@ -34,14 +34,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!= true){
                 <a href="welcome.php">Home</a>
 			     <a href="product.php">Product</a>
 			     <a href="">Contact</a>
-<!--
+
                 <a href=""><span style="color:#ff523b;font-size:17px;"><b>Logout:</b></span></a>
--->
-<!--
+
+
                 <a href="" class="side-name">
                     Hi!&nbsp;<span style="color:#ff523b;font-size:17px;"><b><?php echo $_POST["firstname"]; ?></b></span><br>
                 </a>
--->
+
                 <a href="#" onclick="opencart()"><i class="fa fa-shopping-cart" style="font-size:36px"  title="Cart"></i></a>
             </div>
     <div id="main">
@@ -54,13 +54,11 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!= true){
 		<div class="logo"> <img src="IMG/logo.png" width="125px"></div>
 		<nav>
 			<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="">Home</a></li>
 			<li><a href="product.php">Product</a></li>
 			<li><a href="" >Contact</a></li>
 			<li><a onclick="displayProfile()">Account</a></li>
                 <li><a href="logout.php"><span style="color:#ff523b;font-size:17px;"><b>Logout</b></span></a></li>
-
-
             </ul>
 		</nav>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -315,19 +313,19 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!= true){
     </div>
     
     <div class="Profile" id="profile">
-            
-        <span style="font-size: 30px;margin-left:90%;cursor: pointer;color:#000;" onclick="closeProfile()">&times;</span>
-        
-        <p align="center"><img src="IMG/logo.png"></p><br>
-        
-        <p align="center" style="font-size:35px;"> Hello!&nbsp;<b style="color:coral;"><?php echo $_POST["firstname"];?></b></p><br>
-        
-        <p align="center" style="font-size:30px;">Welcome to your Account Section</p><br>
-        <p align="center"><img src="IMG/person-1.png"></p>
-        <p align="center" style="font-size:25px;">First Name: <?php echo $_POST["firstname"];  ?></p>
-        <p align="center" style="font-size:25px;">Last Name: <?php echo $_POST["lastname"];  ?></p>
-        <p align="center" style="font-size:25px;">Email: <?php echo $_POST["email"];  ?></p><br>
-    </div>
+    <span style="font-size: 30px;margin-left:90%;cursor: pointer;color:#000;" onclick="closeProfile()">&times;</span>
+    
+    <p align="center"><img src="IMG/logo.png"></p><br>
+    
+    <p align="center" style="font-size:25px;"> Hello!&nbsp;<b style="color:coral;"><?php echo isset($_SESSION["firstname"]) ? $_SESSION["firstname"] : 'Guest'; ?></b></p><br>
+    
+    <p align="center" style="font-size:20px;">Welcome to your Account Section</p><br>
+    <p align="center"><img src="IMG/person-1.png"></p>
+    <p align="center" style="font-size:20px;">First Name: <?php echo isset($_SESSION["firstname"]) ? $_SESSION["firstname"] : 'Not provided'; ?></p>
+    <p align="center" style="font-size:20px;">Last Name: <?php echo isset($_SESSION["lastname"]) ? $_SESSION["lastname"] : 'Not provided'; ?></p>
+    <p align="center" style="font-size:20px;">Email: <?php echo isset($_SESSION["email"]) ? $_SESSION["email"] : 'Not provided'; ?></p><br>
+</div>
+
     
 <div class="cart" id="cart">
             <span style="font-size:30px;margin-left:50%;cursor: pointer;" onclick="closecart()">&times;</span><br><br>

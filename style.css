@@ -95,10 +95,9 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: center; /* This line should be replaced with appropriate padding values */
-    position: fixed;
+    padding: center;
     width: 100%;
-    padding: 25px; /* This line should be removed or adjusted as necessary */
+    padding: 25px;
     background-color: #fff;
     transition: background-color 1s ease;
     z-index:2;
@@ -183,6 +182,7 @@ p{
 }
 .product{
     padding:70px;
+    padding-top: 100px;
 }
 .feature{
     padding:0px 40px 0px 40px;
@@ -326,11 +326,11 @@ input[type=reset]:hover , input[type=submit]:hover{
     color: #555;
 }
 .Profile{
-    padding:30px;
+    padding:10px;
     background:#fff;
     color:#121212;
-    position:absolute;
-    top:0%;
+    position:fixed;
+    top:50%;
     left:33%;
     display: none;
 }
@@ -441,7 +441,7 @@ footer{
     .cross{
         margin-right:100%;
         text-align: left;
-        margin-left:-10%:
+        margin-left:-10%;
     }
     .login{
         top:20%;
